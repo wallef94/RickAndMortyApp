@@ -28,6 +28,7 @@ final class RMCharacterListView: UIView {
         view.alpha = 0
         view.translatesAutoresizingMaskIntoConstraints = false
         view.register(RMCharacterCollectionViewCell.self, forCellWithReuseIdentifier: RMCharacterCollectionViewCell.cellIdentifier)
+        view.register(RMFooterLoadingCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: RMFooterLoadingCollectionReusableView.identifier)
         return view
     }()
     
